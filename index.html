@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag: required for responsive layout on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Kian Minellie, an aspiring web developer.">
+  <title>Kian Minellie | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lexend:wght@600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand">Kian Minellie</a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Dark/light mode toggle -->
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark mode">
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <!-- Hamburger button (mobile only) -->
+        <button id="menu-toggle" class="icon-btn menu-btn" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 2. HERO / ABOUT ME: a desk with a clipboard, name tag and ID photo -->
+    <section id="home" class="hero">
+
+      <!-- Desk props (decorative) -->
+      <svg class="earbuds" viewBox="0 0 420 160" aria-hidden="true">
+        <path d="M10 0 C60 130 170 10 230 100 S350 150 410 40" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="410" cy="38" rx="9" ry="12" fill="#fff"/>
+      </svg>
+      <div class="mat" aria-hidden="true"><span class="ruler"></span></div>
+      <svg class="compass" viewBox="0 0 120 170" aria-hidden="true">
+        <line x1="60" y1="14" x2="22" y2="150" stroke="#b08d3c" stroke-width="7" stroke-linecap="round"/>
+        <line x1="60" y1="14" x2="98" y2="150" stroke="#b08d3c" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="60" cy="14" r="12" fill="#d4ab4f"/>
+      </svg>
+      <svg class="paperclips" viewBox="0 0 120 120" aria-hidden="true">
+        <g fill="none" stroke="#3b82f6" stroke-width="4" stroke-linecap="round">
+          <path id="clip" d="M30 95 V28 a11 11 0 0 1 22 0 V92 a17 17 0 0 1 -34 0 V34"/>
+          <use href="#clip" transform="translate(30 6) rotate(12 40 60)"/>
+          <use href="#clip" transform="translate(58 0) rotate(-10 40 60)"/>
+        </g>
+      </svg>
+
+      <div class="clipboard">
+        <span class="metal-clip" aria-hidden="true"></span>
+
+        <div class="paper">
+          <div class="left">
+            <!-- "Hello my name is" name tag -->
+            <div class="nametag">
+              <p class="hello">HELLO</p>
+              <p class="myname">my name is</p>
+              <h1><span>KIAN</span><span>MINELLIE</span></h1>
+            </div>
+
+            <!-- Photo in a clear ID holder on a lanyard -->
+            <figure class="id-holder">
+              <span class="slot" aria-hidden="true"></span>
+              <img src="Profile.svg.jpg" alt="Portrait of Kian Minellie" width="400" height="400">
+            </figure>
+          </div>
+
+          <div class="right">
+            <p class="hi">Hi!</p>
+            <p>Hi! I'm Kian Minellie, an Information Technology student who enjoys creating websites and exploring new ideas through coding. I like designing clean and user-friendly interfaces while also trying different styles to make my projects look better.</p>
+            <p>I'm currently learning HTML, CSS, JavaScript, and React to improve my web development skills and build more projects. I also enjoy editing photos and videos, which allows me to express my creativity. Outside of these hobbies, I like drawing, playing badminton, and gaming.</p>
+            <p class="edu"><strong>Education:</strong> BSIT - Bulacan State University Main Campus</p>
+            <ul class="pills" aria-label="Skills">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Teamwork</li>
+            </ul>
+
+            <div class="hero-contact">
+              <p class="label">Contact:</p>
+              <ul>
+                <li><span class="dot dot-red" aria-hidden="true">✉</span><a href="mailto:minellie07@gmail.com">minellie07@gmail.com</a></li>
+                <li><span class="dot dot-dark" aria-hidden="true">GH</span><a href="https://github.com/kianganiola">kianganiola</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="pen" aria-hidden="true"></span>
+      <span class="binder binder-1" aria-hidden="true"></span>
+      <span class="binder binder-2" aria-hidden="true"></span>
+      <div class="mug-wrap" aria-hidden="true">
+        <span class="mug"></span><span class="leaf leaf-1"></span><span class="leaf leaf-2"></span>
+      </div>
+
+    </section>
+
+    <!-- 3. PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="card-grid">
+        <article class="card project">
+          <p class="date">2026</p>
+          <h3>Personal Portfolio</h3>
+          <p>This single-page site. Built with semantic HTML, a responsive Flexbox and Grid layout, and JavaScript for the menu and theme toggle.</p>
+          <ul class="pills" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a href="https://github.com/kianganiola" class="card-link">View on GitHub</a>
+        </article>
+
+        <article class="card project">
+          <p class="date">BSIT 2E</p>
+          <h3>MyLibrary</h3>
+          <p>A group project: a digital library management system that helps librarians track books and borrowing, manage student accounts, and keep the collection organized. I worked on the front-end pages and styling.</p>
+          <ul class="pills" aria-label="Technologies used"><li>PHP</li><li>MySQL</li><li>Front-End</li></ul>
+          <a href="https://github.com/agultoeugene/BSIT-2E-G1-Group4-MyLibrary" class="card-link">View on GitHub</a>
+        </article>
+
+        <article class="card project">
+          <p class="date">Midterm Exam</p>
+          <h3>Sip Society</h3>
+          <p>A drink-ordering web app with a menu, login, and shopping cart, built with React. Add drinks to your cart and get instant notifications.</p>
+          <ul class="pills" aria-label="Technologies used"><li>React</li><li>Vite</li><li>JavaScript</li></ul>
+          <a href="https://kianganiola.github.io/KianMinellie/" class="card-link">View live demo</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. FOOTER / CONTACT -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-card card">
+      <div>
+        <h2>Let's Connect</h2>
+        <p>Have a question or want to work together? Send me a message.</p>
+      </div>
+      <ul class="contact-list">
+        <li><span class="dot dot-red" aria-hidden="true">✉</span><a href="mailto:minellie07@gmail.com">minellie07@gmail.com</a></li>
+        <li><span class="dot dot-dark" aria-hidden="true">GH</span><a href="https://github.com/kianganiola">kianganiola</a></li>
+        <li><span class="dot dot-blue" aria-hidden="true">f</span><a href="https://www.facebook.com/kian.ganiola.7">Kian Ganiola</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2026 Kian Minellie. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
